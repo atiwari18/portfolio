@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+// src/App.js
+import React from 'react';
+import TVABackground from './Components/TVABackground';
+import './App.css'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <TVABackground>
+        <h1 className="tva-title">My Portfolio</h1>
+        <h2 className="tva-title">About</h2>
+        <h2 className="tva-title">Experience</h2>
+        {/* Other content */}
+      </TVABackground>
     </div>
   );
 }

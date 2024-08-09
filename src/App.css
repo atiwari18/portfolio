@@ -36,3 +36,18 @@
     transform: rotate(360deg);
   }
 }
+
+.tva-title {
+  color: #ff8752;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 3rem;
+  transition: background-color 0.3s, color 0.3s, padding 0.3s; /* Ensure padding transition is smooth */
+  padding: 10px; /* Consistent padding */
+  display: inline-block; /* Prevents block-level layout shifts */
+  border-radius: 5px; /* Rounded corners */
+}
+
+.tva-title:hover {
+  background-color: orange;
+  color: black;
+}
