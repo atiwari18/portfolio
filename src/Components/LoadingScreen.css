@@ -25,4 +25,33 @@
     text-align: center; /* Center the text */
   }
 
+  .loading-bar-container {
+    margin-top: 20px;
+    width: 80%; /* Default width is 80% of the container */
+    max-width: 1000px; /* Max width is 1000px */
+    margin: 0 auto;
+    height: 25px;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+  }
+  
+  .loading-bar {
+    height: 100%;
+    background-color: #FFA500;
+    border-radius: 5px;
+    transition: width 0.1s ease-in-out;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .loading-bar-container {
+      width: 90%; /* Increase width on smaller screens */
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .loading-bar-container {
+      width: 95%; /* Increase width even more on very small screens */
+    }
+  }
+  
   
