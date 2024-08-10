@@ -1,4 +1,5 @@
-.tva-background {
+/* LoadingScreen.css */
+.loading-screen {
     background-color: black;
     background-image: 
         linear-gradient(rgba(255, 165, 0, 0.25) 1px, transparent 1px), /* Semi-transparent orange */
@@ -11,9 +12,17 @@
     align-items: center;
     justify-content: center;
     color: white; /* Ensure text is visible on the dark background */
-}
-
-.full-height {
-    height: 100vh;
-    overflow: hidden;
   }
+  
+  .message-line {
+    margin-bottom: 1rem; /* Adds space between lines */
+  }
+  
+  .type-animation {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5rem;
+    margin-bottom: 1rem; /* Adds space between lines */
+    text-align: center; /* Center the text */
+  }
+
+  
