@@ -37,14 +37,43 @@
   }
 }
 
+/* Ensure the box doesn't touch the edge of the screen */
+.tva-container {
+  display: flex;
+  flex-direction: column; /* Align items vertically */
+  align-items: center; /* Center items horizontally */
+  padding: 20px; /* Add padding to prevent touching the screen edges */
+  box-sizing: border-box; /* Include padding in the element's total width and height */
+}
+
 .tva-title {
   color: #ff8752;
   font-family: 'Courier New', Courier, monospace;
   font-size: 3rem;
-  transition: background-color 0.3s, color 0.3s, padding 0.3s; /* Ensure padding transition is smooth */
-  padding: 10px; /* Consistent padding */
-  display: inline-block; /* Prevents block-level layout shifts */
-  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s, color 0.3s, padding 0.3s;
+  padding: 10px;
+  display: inline-block;
+  border-radius: 5px;
+  margin: 10px 0; /* Add margin to space out the titles vertically */
+}
+
+/* Adjust font size for smaller screens */
+@media (max-width: 1200px) {
+  .tva-title {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .tva-title {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .tva-title {
+    font-size: 1.5rem;
+  }
 }
 
 .tva-title:hover {

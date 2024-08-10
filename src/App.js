@@ -35,12 +35,14 @@ function App() {
           {/* Conditionally render TVABackground only on the homepage */}
           {isHomePage ? (
             <TVABackground>
-              <h1 className="tva-title">My Portfolio</h1>
-              <h2 className="tva-title">About</h2>
-              <Link to="/experience">
-                <h2 className="tva-title">Experience</h2>
-              </Link>
-              {/* Other content */}
+              <div className="tva-container">
+                <h1 className="tva-title">My Portfolio</h1>
+                <h2 className="tva-title">About</h2>
+                <Link to="/experience">
+                  <h2 className="tva-title">Experience</h2>
+                </Link>
+                {/* Other content */}
+              </div>
             </TVABackground>
           ) : (
             <Routes>
