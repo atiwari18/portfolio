@@ -2,12 +2,72 @@ import React from 'react';
 import ProjectBlock from './ProjectBlock';
 import styled from 'styled-components';
 import TVABackground from './TVABackground';
+import wireshark from './wireshark.png';
+import qrserver from './QRServer.png';
+import seats4u from './seats4u.png';
+import howtosave from './how_to_save.png';
+import cardiac from './rehab.png';
 
-const PageContainer = styled.div`
+const GridContainer = styled.div`
+  display: grid;
+  grid-template-columns: repeat(4, minmax(250px, 1fr)); /* Adjusts columns to fit available space */
+  gap: 20px;
   padding: 20px;
-  color: #fff;
-  min-height: 100vh;
+  box-sizing: border-box; /* Ensures padding is included in the width calculation */
+
+  @media (max-width: 1100px) {
+    grid-template-columns: repeat(3, minmax(200px, 1fr)); /* Adjust columns for smaller screens */
+  }
+
+  @media (max-width: 685px) {
+    grid-template-columns: repeat(2, minmax(200px, 1fr)); /* Adjust columns for smaller screens */
+  }
+
+  @media (max-width: 500px) {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Further adjust columns for very small screens */
+  }
 `;
+
+const GridItem = styled.div`
+  background-color: black; /* Example background color */
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column; /* Stack image and text vertically */
+  align-items: center;
+  justify-content: center;
+  color: orange;
+  font-size: 1.5rem;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  font-family: 'Courier New', Courier, monospace;
+
+  &:hover {
+    background-color: orange; /* Change background color on hover */
+    color: black; /* Optional: Change text color on hover for contrast */
+  }
+
+  @media (max-width: 600px) {
+    font-size: 1.2rem; /* Smaller font size on smaller screens */
+    padding: 10px; /* Reduce padding on smaller screens */
+  }
+`;
+
+const ProjectImage = styled.img`
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 10px; /* Space between the image and the text */
+`;
+
+// Example list of coding projects with image URLs
+const codingProjects = [
+    { name: 'Wireshark CLI', imageUrl: wireshark },
+    { name: 'QR Code Server', imageUrl: qrserver },
+    { name: 'Seats4U', imageUrl: seats4u },
+    { name: 'How To Save', imageUrl: howtosave },
+    { name: 'Achieving Effective Operations @ Cardiac Rehabilitation Center', imageUrl: cardiac },
+];
 
 const ExperiencePage = () => {
   const projects = [
@@ -40,6 +100,15 @@ const ExperiencePage = () => {
             downloadLink={project.downloadLink}
           />
         ))}
+
+        <GridContainer>
+            {codingProjects.map((project, index) => (
+            <GridItem key={index}>
+                <ProjectImage src={project.imageUrl} alt={`${project.name} image`} />
+                {project.name}
+            </GridItem>
+            ))}
+      </GridContainer>
     </TVABackground>
 
   );
