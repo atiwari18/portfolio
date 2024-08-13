@@ -2,18 +2,29 @@ import React from 'react';
 import styled from 'styled-components';
 import TVABackground from './TVABackground';
 import yourImage from './PIC_5867.jpg'; // Replace with your image path
+// Import your tech stack logos
+import pythonLogo from './python.png'; 
+import CLogo from './C.png';
+import CppLogo from './C++.png';
+import CSSLogo from './css3.png';
+import githubLogo from './github.png';
+import javaLogo from './java.png';
+import jsLogo from './JavaScript.png';
+import reactLogo from './react.png';
+import sciKitLogo from './scikit.png';
+import tensorLogo from './Tensor.png';
 
 const AboutContainer = styled.div`
   display: flex;
   justify-content: space-between;
-  align-items: stretch; /* Ensure both boxes stretch to the same height */
+  align-items: stretch;
   padding: 20px;
   width: 80%;
   max-width: 1200px;
-  margin: auto;
+  margin: 20px auto 0 auto; /* Add a top margin to the container */
 
   @media (max-width: 1200px) {
-    flex-direction: column; /* Stack boxes vertically on smaller screens */
+    flex-direction: column;
     align-items: center;
   }
 `;
@@ -25,12 +36,12 @@ const Box = styled.div`
   overflow: hidden;
   transition: background-color 0.3s ease, color 0.3s ease;
   display: flex;
-  flex-direction: column; /* Makes content stack vertically */
-  justify-content: stretch; /* Ensures the content fills the box height */
+  flex-direction: column;
+  justify-content: stretch;
 
   @media (max-width: 768px) {
-    width: 90%; /* Reduce width on smaller screens */
-    margin-bottom: 20px; /* Add space between stacked boxes */
+    width: 90%;
+    margin-bottom: 20px;
   }
 `;
 
@@ -42,8 +53,8 @@ const ImageBox = styled(Box)`
 
 const Image = styled.img`
   width: 100%;
-  height: 100%; /* Ensures the image fills the entire box */
-  object-fit: cover; /* Maintains the aspect ratio while filling the box */
+  height: 100%;
+  object-fit: cover;
   border-radius: 10px;
 `;
 
@@ -52,7 +63,7 @@ const DescriptionBox = styled(Box)`
   color: orange;
   text-align: left;
   font-family: 'Courier New', Courier, monospace;
-  overflow-y: auto; /* Enable vertical scrolling if content overflows */
+  overflow-y: auto;
 
   &:hover {
     background-color: orange;
@@ -64,10 +75,47 @@ const DescriptionBox = styled(Box)`
   }
 `;
 
+const TechStackContainer = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+`;
+
+const TechStackItem = styled.div`
+  width: 80px;
+  height: 80px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: orange;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+`;
+
+// Global style for titles
+const Title = styled.h1`
+  margin: 10px;
+  font-family: 'Courier New', Courier, monospace;
+  color: orange;
+  text-align: center;
+`;
+
 const About = () => {
   return (
     <TVABackground>
-      <h1 className='tva-title'>About Me</h1>
+      <Title className='tva-title'>About Me</Title>
       <AboutContainer>
         <ImageBox>
           <Image src={yourImage} alt="Your Name" />
@@ -106,6 +154,41 @@ const About = () => {
           </p>
         </DescriptionBox>
       </AboutContainer>
+
+      <Title className='tva-title'>My Techstack</Title>
+      <TechStackContainer>
+        <TechStackItem>
+          <img src={pythonLogo} alt="Python" />
+        </TechStackItem>
+        <TechStackItem>
+          <img src={tensorLogo} alt="Tensor" />
+        </TechStackItem>
+        <TechStackItem>
+          <img src={sciKitLogo} alt="SCiKit" />
+        </TechStackItem>
+        <TechStackItem>
+          <img src={jsLogo} alt="JS" />
+        </TechStackItem>
+        <TechStackItem>
+          <img src={CSSLogo} alt="CSS" />
+        </TechStackItem>
+        <TechStackItem>
+          <img src={reactLogo} alt="React" />
+        </TechStackItem>
+        <TechStackItem>
+          <img src={javaLogo} alt="Java" />
+        </TechStackItem>
+        <TechStackItem>
+          <img src={CLogo} alt="C" />
+        </TechStackItem>
+        <TechStackItem>
+          <img src={CppLogo} alt="Cpp" />
+        </TechStackItem>
+        <TechStackItem>
+          <img src={githubLogo} alt="Cpp" />
+        </TechStackItem>
+        {/* Add more TechStackItem components for other logos */}
+      </TechStackContainer>
     </TVABackground>
   );
 };
