@@ -36,7 +36,6 @@ const Timeline = () => {
         <h4 className="vertical-timeline-element-subtitle">Worcester Polytechnic Institute</h4>
       </VerticalTimelineElement>
 
-      {/* Work Experience */}
       <VerticalTimelineElement
         date="August 2020 - December 2024"
         iconStyle={{ background: 'black', color: 'orange' }}
@@ -44,6 +43,27 @@ const Timeline = () => {
       >
         <h3 className="vertical-timeline-element-title">Bachelor of Science in Industrial Engineering</h3>
         <h4 className="vertical-timeline-element-subtitle">Worcester Polytechnic Institute</h4>
+      </VerticalTimelineElement>
+
+      {/* Work Experience */}
+
+      <VerticalTimelineElement
+        date="May 2023 - August 2023"
+        iconStyle={{ background: 'black', color: 'orange' }}
+        icon={<i className="fas fa-briefcase"></i>}
+        className={isRightSide ? 'right-side' : ''}
+      >
+        <h3 className="vertical-timeline-element-title">GE Aviation</h3>
+        <h4 className="vertical-timeline-element-subtitle">Supply Chain Intern</h4>
+      </VerticalTimelineElement>
+
+      <VerticalTimelineElement
+        date="May 2022 - August 2022"
+        iconStyle={{ background: 'black', color: 'orange' }}
+        icon={<i className="fas fa-briefcase"></i>}
+      >
+        <h3 className="vertical-timeline-element-title">Eaton Corporation</h3>
+        <h4 className="vertical-timeline-element-subtitle">Operations Management Intern</h4>
       </VerticalTimelineElement>
 
       {/* Add more timeline elements here */}

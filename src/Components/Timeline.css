@@ -63,4 +63,9 @@
   background: orange;
 }
 
-
+/* Media query for smaller screens */
+@media (max-width: 1170px) {
+  .vertical-timeline-element-date {
+    color: black; /* Change date color to black for smaller screens */
+  }
+}
