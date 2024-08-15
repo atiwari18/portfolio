@@ -24,7 +24,7 @@ const LoadingBar = () => {
       <div style={{ textAlign: 'center', marginTop: '50px', width:'100vw' }}>
         <img src={missMinutesGif} alt="Miss Minutes" style={{ width: '200px' }} />
         <div style={{
-          marginTop: '20px',
+          marginTop: '30px',
           width: '80%', // Responsive width within the viewport
           maxWidth: '800px', // Maximum width for larger screens
           minWidth: '100px', // Minimum width for smaller screens

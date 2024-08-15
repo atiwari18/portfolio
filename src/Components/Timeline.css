@@ -1,0 +1,66 @@
+.right-side .vertical-timeline-element-date {
+  position: absolute !important;
+  left: 500px !important; /* Default position for larger screens */
+}
+
+.vertical-timeline-element-date {
+  color: orange;
+}
+
+
+.vertical-timeline-element-content {
+  background-color: orange; /* Change the background color to black */
+  color: black; /* Ensure text is readable by changing text color to white */
+  padding: 20px; /* Optional: Add padding for better spacing */
+  border-radius: 8px; /* Optional: Add rounded corners for better appearance */
+}
+
+/* Remove border and outline from timeline elements */
+.vertical-timeline-element {
+  border: none; /* Remove border */
+  box-shadow: none; /* Remove box shadow */
+  outline: none; /* Remove outline */
+}
+
+.vertical-timeline-element {
+  border: none; /* Remove border */
+  box-shadow: none; /* Remove box shadow */
+  outline: none; /* Remove outline */
+}
+
+/* Additional styles to remove any other unwanted outlines or shadows */
+.vertical-timeline-element-content {
+  border: none; /* Remove border from content */
+  box-shadow: none; /* Remove box shadow from content */
+}
+
+.vertical-timeline-element-icon {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  background-color: black; /* Background color for the icon container */
+  color: orange; /* Icon color */
+  width: 40px; /* Set a fixed width for the circle */
+  height: 40px; /* Set a fixed height for the circle */
+  border-radius: 50%; /* Make the container circular */
+  border: none; /* Remove border if any */
+  box-shadow: none; /* Remove shadow if any */
+}
+
+/* Adjust icon size and color */
+.vertical-timeline-element-icon i {
+  font-size: 20px; /* Adjust icon size */
+  margin: 0; /* Remove default margin */
+}
+
+.vertical-timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 18px;
+  height: 100%;
+  width: 4px;
+  background: orange;
+}
+
+

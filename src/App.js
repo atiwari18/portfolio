@@ -4,6 +4,7 @@ import TVABackground from './Components/TVABackground';
 import About from './Components/About.js'
 import ExperiencePage from './Components/ExperiencePage';
 import LoadingScreen from './Components/LoadingScreen'; // Import the LoadingScreen component
+import MyJourney from './Components/MyJourney.js';
 import './App.css';
 
 function App() {
@@ -45,16 +46,20 @@ function App() {
                 <Link to="/about">
                   <h2 className="tva-title">About</h2>
                 </Link>
-                <Link to="/experience">
-                  <h2 className="tva-title">Experience</h2>
+                <Link to="/my-journey">
+                  <h2 className="tva-title">My Journey</h2>
+                </Link>
+                <Link to="/project-experience">
+                  <h2 className="tva-title">Project Experience</h2>
                 </Link>
                 {/* Other content */}
               </div>
             </TVABackground>
           ) : (
             <Routes>
-              <Route path="/experience" element={<ExperiencePage />} />
+              <Route path="/project-experience" element={<ExperiencePage />} />
               <Route path="/about" element={<About/>}/>
+              <Route path="/my-journey" element={<MyJourney/>}/>
               {/* Add more routes here if needed */}
             </Routes>
           )}
