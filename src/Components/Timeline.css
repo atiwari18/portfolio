@@ -69,3 +69,13 @@
     color: black; /* Change date color to black for smaller screens */
   }
 }
+
+/* Left side arrow */
+.vertical-timeline-element-content-arrow {
+  border-right: 7px solid orange; /* Changes the arrow's color */
+}
+
+/* Right side arrow (if you have any elements on the right side) */
+.vertical-timeline-element--right .vertical-timeline-element-content-arrow {
+  border-left: 7px solid orange; /* Changes the arrow's color */
+}
