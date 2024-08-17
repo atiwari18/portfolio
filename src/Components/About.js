@@ -29,7 +29,7 @@ const Wrapper = styled.div`
   flex-direction: column;
   align-items: center; /* Center content horizontally */
   min-height: 100vh; /* Ensure the wrapper takes full viewport height */
-  padding: 20px;
+  padding: 1px;
 `;
 
 const Container = styled.div`

@@ -4,19 +4,25 @@ import missMinutesGif from './missminutes.gif'; // replace with your actual path
 const LoadingBar = () => {
   const [progress, setProgress] = useState(0);
 
+
   useEffect(() => {
-    const interval = setInterval(() => {
+    const progressDuration = 14500; // 14.5 seconds for progress bar to complete
+    const totalSteps = 100; // Total progress in percentage
+    const increment = 100 / (progressDuration / 150); // Calculate increment per interval
+    const interval = 150; // Set interval to 150ms
+  
+    const intervalId = setInterval(() => {
       setProgress((prev) => {
-        if (prev < 100) {
-          return prev + 2; // Increment by 2% every 100ms
+        if (prev < totalSteps) {
+          return prev + increment;
         } else {
-          clearInterval(interval);
-          return 100;
+          clearInterval(intervalId);
+          return totalSteps;
         }
       });
-    }, 100); // 100ms interval
-
-    return () => clearInterval(interval);
+    }, interval);
+  
+    return () => clearInterval(intervalId); // Cleanup interval on unmount
   }, []);
 
   return (
