@@ -1,0 +1,24 @@
+html, body {
+    height: 100%; /* Ensure that body and html elements cover the viewport height */
+    margin: 0; /* Remove default margin */
+}
+
+.tva-background {
+    background-color: black;
+    background-image: 
+        linear-gradient(rgba(255, 165, 0, 0.25) 1px, transparent 1px), /* Semi-transparent orange */
+        linear-gradient(90deg, rgba(255, 165, 0, 0.25) 1px, transparent 1px); /* Semi-transparent orange */
+    background-size: 40px 40px; /* Adjust this value for the grid size */
+    background-repeat: repeat;
+    min-height: 100vh; /* Ensure the element covers at least the viewport height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white; /* Ensure text is visible on the dark background */
+}
+
+.full-height {
+    height: 100vh;
+    overflow: hidden;
+}

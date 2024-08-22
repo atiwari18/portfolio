@@ -1,0 +1,32 @@
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    color: white;
+}
+
+.about-image {
+    width: 200px; /* Adjust size as needed */
+    height: auto;
+    border-radius: 50%; /* Makes the image circular */
+    margin-right: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.about-text {
+    max-width: 600px;
+    padding: 20px;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: black; /* Initial background color */
+    color: white; /* Initial text color */
+    border-radius: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.about-text:hover {
+    background-color: orange; /* Background color on hover */
+    color: black; /* Text color on hover */
+}
