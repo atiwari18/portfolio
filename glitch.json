@@ -1,0 +1,5 @@
+{
+    "install": "npm install",
+    "start": "serve -s build"
+  }
+  
