@@ -7,12 +7,17 @@ const BlockContainer = styled.div`
   padding: 20px;
   border-radius: 10px;
   background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `;
 
 const Title = styled.h2`
   font-size: 1.5rem;
   margin-bottom: 10px;
   color: #ff8752;
+  width: 100%;
+  text-align: left;
 `;
 
 const Description = styled.p`
@@ -20,9 +25,17 @@ const Description = styled.p`
   font-size: 1rem;
   color: #ffffff;
   text-align: left;
+  width: 100%;
 `;
 
-const DownloadButton = styled.a`
+const ButtonContainer = styled.div`
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  width: 100%;
+`;
+
+const Button = styled.a`
   display: inline-block;
   padding: 10px 20px;
   background-color: #ff8752;
@@ -36,14 +49,23 @@ const DownloadButton = styled.a`
   }
 `;
 
-const ProjectBlock = ({ title, description, downloadLink }) => {
+const ProjectBlock = ({ title, description, downloadLink, githubUrl }) => {
   return (
     <BlockContainer>
       <Title>{title}</Title>
       <Description>{description}</Description>
-      <DownloadButton href={downloadLink} download>
-        Download Paper
-      </DownloadButton>
+      <ButtonContainer>
+        {downloadLink && (
+          <Button href={downloadLink} download>
+            Download Paper
+          </Button>
+        )}
+        {githubUrl && (
+          <Button href={githubUrl} target="_blank" rel="noopener noreferrer">
+            View on GitHub
+          </Button>
+        )}
+      </ButtonContainer>
     </BlockContainer>
   );
 };

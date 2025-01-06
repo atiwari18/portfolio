@@ -11,6 +11,7 @@ import cardiac from './rehab.png';
 import mqp from './Unveiling Communication and Support Dynamics Analyzing Telegram and Helpline Data in Conflict Zones (Atharva Tiwari).pdf';
 import psych from './Psychiatric_Disorder_ML_Paper.pdf'
 import humanities from './Future of Screenwriting in the Age of AI.pdf'
+import whiteboard from './AI Whiteboard Paper.pdf'
 
 const GridContainer = styled.div`
   display: grid;
@@ -110,10 +111,17 @@ const ExperiencePage = () => {
       downloadLink: psych,
     },
     {
-        title: 'The Future of Screenwriting in the Age of AI',
-        description: 'The Humanities and Arts Requirement was completed with a sequence of courses in writing and German that culminated in a research paper in a seminar on AI and the future of work. This research paper examines the role of AI in the future of screenwriting. It discusses the process of creative writing, emphasizing the centrality of conveying and connecting via human emotions. While some of the recent AI systems are designed to replace writers, other AI systems are designed to work with writers. Comparing these types of AI systems, the paper examines human-machine collaboration in creative writing and envisions a possible future where machines and humans create emotionally moving scripts. It concludes with an analysis of AI’s potential impact on the future of Hollywood writers.',
-        downloadLink: humanities,
-      },
+      title: 'The Future of Screenwriting in the Age of AI',
+      description: 'The Humanities and Arts Requirement was completed with a sequence of courses in writing and German that culminated in a research paper in a seminar on AI and the future of work. This research paper examines the role of AI in the future of screenwriting. It discusses the process of creative writing, emphasizing the centrality of conveying and connecting via human emotions. While some of the recent AI systems are designed to replace writers, other AI systems are designed to work with writers. Comparing these types of AI systems, the paper examines human-machine collaboration in creative writing and envisions a possible future where machines and humans create emotionally moving scripts. It concludes with an analysis of AI’s potential impact on the future of Hollywood writers.',
+      downloadLink: humanities,
+    },
+    {
+      title: 'AI Whiteboard',
+      description: 'The rise of virtual environments post-COVID-19 has highlighted the need for more intuitive and effective tools for communication, particularly in virtual meetings and online learning. Conventional methods of interaction, such as drawing with a mouse, are limited in both precision and user engagement. We explore several state-of-the-art (SOTA) hand gesture recognition methods, including YOLOv3 with DarkNet-53, Faster R-CNN, mIV3Net, EfficientNet, and ConvNeXt, evaluating their suitability for real-time, low-resource environments. Each model’s strengths and challenges are discussed, and preliminary results guide the selection of the optimal approach for integrating hand gesture recognition into an AI-driven whiteboard application. Through testing and comparison, we aim to create a system that enhances user engagement, reduces computational overhead, and provides an accessible, innovative solution for digital collaboration.This paper proposes an AI-powered whiteboard system, leveraging Google’s Media Pipe Hands to enable hand gesture-based drawing using simple cameras. This solution aims to overcome existing limitations of traditional whiteboard tools, fostering creativity and interactivity in online platforms like Zoom and Microsoft Teams. The system has significant applications across education, enabling more dynamic and collaborative learning experiences, especially for students with disabilities. We also discuss potential future work, including further optimizations in gesture recognition accuracy, real-time performance, and exploring additional applications beyond digital collaboration tools.',
+      downloadLink: whiteboard,
+      githubUrl: 'https://github.com/atiwari18/ai-whiteboard'
+    },
+
     // Add more projects as needed
   ];
 
@@ -136,6 +144,7 @@ const ExperiencePage = () => {
             title={project.title}
             description={project.description}
             downloadLink={project.downloadLink}
+            githubUrl={project.githubUrl}
           />
         ))}
 

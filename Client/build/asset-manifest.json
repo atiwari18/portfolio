@@ -1,10 +1,11 @@
 {
   "files": {
     "main.css": "/static/css/main.d3cb4294.css",
-    "main.js": "/static/js/main.c89fbf3f.js",
+    "main.js": "/static/js/main.c3d9920e.js",
     "static/js/453.1407b060.chunk.js": "/static/js/453.1407b060.chunk.js",
     "static/media/PIC_5867.jpg": "/static/media/PIC_5867.001306152b130012ec74.jpg",
     "static/media/Unveiling Communication and Support Dynamics Analyzing Telegram and Helpline Data in Conflict Zones (Atharva Tiwari).pdf": "/static/media/Unveiling Communication and Support Dynamics Analyzing Telegram and Helpline Data in Conflict Zones (Atharva Tiwari).8f907c4dd9621d49e3de.pdf",
+    "static/media/AI Whiteboard Paper.pdf": "/static/media/AI Whiteboard Paper.f96dd4d78414394bdefe.pdf",
     "static/media/Psychiatric_Disorder_ML_Paper.pdf": "/static/media/Psychiatric_Disorder_ML_Paper.2a97392355423827f66b.pdf",
     "static/media/fa-solid-900.ttf": "/static/media/fa-solid-900.07ed6d5fa32c1d54af0f.ttf",
     "static/media/Future of Screenwriting in the Age of AI.pdf": "/static/media/Future of Screenwriting in the Age of AI.6154f8ba75ca21936a9c.pdf",
@@ -39,11 +40,11 @@
     "static/media/fa-v4compatibility.woff2": "/static/media/fa-v4compatibility.6cfec8414be20e2c3426.woff2",
     "index.html": "/index.html",
     "main.d3cb4294.css.map": "/static/css/main.d3cb4294.css.map",
-    "main.c89fbf3f.js.map": "/static/js/main.c89fbf3f.js.map",
+    "main.c3d9920e.js.map": "/static/js/main.c3d9920e.js.map",
     "453.1407b060.chunk.js.map": "/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d3cb4294.css",
-    "static/js/main.c89fbf3f.js"
+    "static/js/main.c3d9920e.js"
   ]
 }
