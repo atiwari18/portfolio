@@ -27,28 +27,38 @@ const Timeline = () => {
     <VerticalTimeline>
 
       <VerticalTimelineElement
-        date="May 2025 - February 2026"
+        date={
+          <span className="timeline-date">
+            May 2025 - February 2026
+          </span>
+        }
         iconStyle={{ background: 'black', color: 'orange' }}
         icon={<i className="fas fa-briefcase"></i>}
-        className={isRightSide ? 'right-side' : ''}
       >
         <h3 className="vertical-timeline-element-title">ABB</h3>
         <h4 className="vertical-timeline-element-subtitle">Data Science Intern</h4>
       </VerticalTimelineElement>
-      
+
       {/* Education */}
       <VerticalTimelineElement
-        date="August 2024 - December 2025"
+        date={
+          <span className="timeline-date">
+            August 2024 - December 2026
+          </span>
+        }
         iconStyle={{ background: 'black', color: 'orange' }}
         icon={<i className="fas fa-graduation-cap"></i>}
-        className={isRightSide ? 'right-side' : ''} // Conditionally apply the class
       >
         <h3 className="vertical-timeline-element-title">Master of Science in Computer Science</h3>
         <h4 className="vertical-timeline-element-subtitle">Worcester Polytechnic Institute</h4>
       </VerticalTimelineElement>
 
       <VerticalTimelineElement
-        date="August 2020 - December 2024"
+        date={
+          <span className="timeline-date">
+            August 2020 - December 2024
+          </span>
+        }
         iconStyle={{ background: 'black', color: 'orange' }}
         icon={<i className="fas fa-graduation-cap"></i>}
       >
@@ -59,17 +69,24 @@ const Timeline = () => {
       {/* Work Experience */}
 
       <VerticalTimelineElement
-        date="May 2023 - August 2023"
+        date={
+          <span className="timeline-date">
+            May 2023 - August 2023
+          </span>
+        }
         iconStyle={{ background: 'black', color: 'orange' }}
         icon={<i className="fas fa-briefcase"></i>}
-        className={isRightSide ? 'right-side' : ''}
       >
         <h3 className="vertical-timeline-element-title">GE Aviation</h3>
         <h4 className="vertical-timeline-element-subtitle">Supply Chain Intern</h4>
       </VerticalTimelineElement>
 
       <VerticalTimelineElement
-        date="May 2022 - August 2022"
+        date={
+          <span className="timeline-date">
+            May 2022 - August 2022
+          </span>
+        }
         iconStyle={{ background: 'black', color: 'orange' }}
         icon={<i className="fas fa-briefcase"></i>}
       >

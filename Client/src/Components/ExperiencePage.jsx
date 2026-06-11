@@ -13,6 +13,7 @@ import psych from './Psychiatric_Disorder_ML_Paper.pdf'
 import humanities from './Future of Screenwriting in the Age of AI.pdf'
 import whiteboard from './AI Whiteboard Paper.pdf'
 import stockpred from './Multimodal_Stock_Prediction_Paper.pdf'
+import HomeButton from './HomeButton.jsx';
 
 const GridContainer = styled.div`
   display: grid;
@@ -144,6 +145,7 @@ const ExperiencePage = () => {
 
   return (
     <TVABackground>
+        <HomeButton/>
         <h1 className="tva-title">My Experience</h1>
         {projects.map((project, index) => (
           <ProjectBlock

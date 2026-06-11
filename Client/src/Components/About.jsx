@@ -24,6 +24,7 @@ import windowsLogo from './windows.png';
 import powerBILogo from './powerbi.png';
 import msOfficeLogo from './msoffice.png';
 import torchLogo from './torch.png';
+import HomeButton from './HomeButton.jsx';
 
 const Wrapper = styled.div`
   display: flex;
@@ -179,6 +180,7 @@ const DownloadButton = styled.a`
 const About = () => {
   return (
     <TVABackground>
+      <HomeButton/>
       <Wrapper>
         <Title className='tva-title'>About Me</Title>
         <Container>
