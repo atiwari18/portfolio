@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes, Link, useLocation, useNavigate } from 'react-router-dom';
 import TVABackground from './Components/TVABackground';
-import About from './Components/About.js'
+import About from './Components/About.jsx'
 import ExperiencePage from './Components/ExperiencePage';
 import LoadingScreen from './Components/LoadingScreen'; // Import the LoadingScreen component
-import MyJourney from './Components/MyJourney.js';
+import MyJourney from './Components/MyJourney.jsx';
 import './App.css';
 
 function App() {

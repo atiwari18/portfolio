@@ -1,6 +1,6 @@
 import React from 'react';
-import Timeline from './Timeline.js';
-import TVABackground from './TVABackground.js';
+import Timeline from './Timeline.jsx';
+import TVABackground from './TVABackground.jsx';
 import './MyJourney.css'; // Make sure this file includes your styles
 
 const MyJourney = () => {
