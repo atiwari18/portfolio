@@ -25,6 +25,17 @@ const Timeline = () => {
 
   return (
     <VerticalTimeline>
+
+      <VerticalTimelineElement
+        date="May 2025 - February 2026"
+        iconStyle={{ background: 'black', color: 'orange' }}
+        icon={<i className="fas fa-briefcase"></i>}
+        className={isRightSide ? 'right-side' : ''}
+      >
+        <h3 className="vertical-timeline-element-title">ABB</h3>
+        <h4 className="vertical-timeline-element-subtitle">Data Science Intern</h4>
+      </VerticalTimelineElement>
+      
       {/* Education */}
       <VerticalTimelineElement
         date="August 2024 - December 2025"
